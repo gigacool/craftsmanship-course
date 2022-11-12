@@ -31,3 +31,19 @@ Tests to start
 - 1600 is a leap year (divisible by 400)
 - 1800 is not a leap year (divisible by 4, divisible by 100, not divisible by 400)
 
+### String calculator
+
+Create a string calculator as a function that will get a string in input and return a calculated number as a result.
+
+- Create a simple String calculator with a method signature `int add(string numbers)`
+    - can take up to 2 numbers, separated by commas
+    - returns the sum of the numbers `add("1,2") -> 3`
+    - when receive an empty string, returns 0
+- Allow the `add` method to handle an unknown amount of numbers
+- Allow the `add` method to handle new lines between numbers (instead of commas).
+    - separator is `,` or `\n`
+- Support different delimiters
+    - delimiter is provided at the beginning of the string `"//[delimiter]\n[numbers...]"`
+    - add("//:)\n1:)2") returns 3
+- Calling `add` with a negative number will throw an exception `negative numbers not supported: ${negative-values}` 
+    - display all negative numbers separated by a whitespace
