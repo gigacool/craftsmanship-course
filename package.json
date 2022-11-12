@@ -1,0 +1,27 @@
+{
+  "name": "craftsmanship-course",
+  "version": "1.0.0",
+  "description": "course content",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest sources --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gigacool/craftsmanship-course.git"
+  },
+  "keywords": [
+    "craftsmanship",
+    "course",
+    "kata"
+  ],
+  "author": "cedric hartland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gigacool/craftsmanship-course/issues"
+  },
+  "homepage": "https://github.com/gigacool/craftsmanship-course#readme",
+  "dependencies": {
+    "jest": "^29.3.1"
+  }
+}
