@@ -4,7 +4,10 @@
   "description": "course content",
   "main": "index.js",
   "scripts": {
-    "test": "jest sources --watch"
+    "test": "jest sources --collect-coverage",
+    "ctest": "jest sources --watch --collect-coverage"
+
+    
   },
   "repository": {
     "type": "git",
