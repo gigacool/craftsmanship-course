@@ -31,6 +31,29 @@ Tests to start
 - 1600 is a leap year (divisible by 400)
 - 1800 is not a leap year (divisible by 4, divisible by 100, not divisible by 400)
 
+### Capitalize
+
+Capitalize takes a string and capitalize each word in it
+- empty string remain as is
+- single low capitalized letter becomes upercase
+- only the first letter of a word is capitalized
+- any remaining upercase from the word that is not first letter is converted to lower case
+- if a word is full of uppercase letters, it remains unchanged
+- unicode characters are well processed, such as ä, ö 
+- words can be separated by any whitespaces possible (space, tab, line return, etc.)
+- when input is an empty string, returns empty string
+- when input is null or undefined, returns empty string
+
+Tests to start
+- ''
+- a -> A
+- hello -> Hello
+- hello word -> Hello Word
+- heLLo WoRd -> Hello Word
+- hello\t\nword -> hello Word
+- hellö word ö -> Hellö Word Ö
+- null -> ''
+
 ### String calculator
 
 Create a string calculator as a function that will get a string in input and return a calculated number as a result.
