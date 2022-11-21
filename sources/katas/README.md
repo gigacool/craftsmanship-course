@@ -70,3 +70,16 @@ Create a string calculator as a function that will get a string in input and ret
     - add("//:)\n1:)2") returns 3
 - Calling `add` with a negative number will throw an exception `negative numbers not supported: ${negative-values}` 
     - display all negative numbers separated by a whitespace
+
+
+## Refactoring
+
+The code has been written by another developer. Test coverage is high but code is... perfectable. You have less than a hour to improve it. What do you do ? 
+
+Code source can be found in /sources/katas/refactoring
+Test can be run with npm run ctest-refactoring
+
+Think "clean code" 
+
+Original source:  
+https://github.com/emilybache/Tennis-Refactoring-Kata/tree/main/javascript-jest

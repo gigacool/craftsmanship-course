@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest sources --collect-coverage",
     "ctest": "jest sources --watch --collect-coverage",
-    "ctest-tennis":"jest sources/katas/refactoring --watch"
+    "ctest-refactoring":"jest sources/katas/refactoring --watch"
   },
   "repository": {
     "type": "git",
