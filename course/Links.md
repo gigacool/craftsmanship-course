@@ -3,6 +3,14 @@
 ## craftsmanship
 
 - https://github.com/fmbenhassine/awesome-software-craftsmanship 
+- https://roadmap.sh/roadmaps 
+
+
+## tooling
+
+- https://github.com/jlord/git-it-electron
+- https://www.conventionalcommits.org/en/v1.0.0/
+
 
 
 ## clean code
