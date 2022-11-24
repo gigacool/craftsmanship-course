@@ -165,53 +165,8 @@ function getScore3(p1, p2) {
     }
 }
 
-
-function isPlaying(player1Points, player2Points){
-    return (['0-0', '0-1', '0-2', '0-3', '1-0', '1-1', '1-2', '1-3', '2-0', '2-1', '2-2', '2-3', '3-0', '3-1', '3-2',]
-        .indexOf(player1Points+'-'+player2Points) >=0);
-
-}
-
-function isDeuce(player1Points, player2Points){
-    return (!isPlaying(player1Points, player2Points) &&
-        player1Points === player2Points);
-}
-
-function isAdvantage(player1Points, player2Points){
-    return (Math.abs(player1Points - player2Points) < 2);
-}
-
-function playingScore(player1Points, player2Points){
-    const POINTS = ["Love", "Fifteen", "Thirty", "Forty"];
-    let score = POINTS[player1Points];
-    if (player1Points === player2Points){
-        return score +'-All';
-    }
-    return score + "-" + POINTS[player2Points];
-''}
-
-function getScore4(player1Points, player2Points, player1="player1", player2="player2") {
-
-    if(isPlaying(player1Points, player2Points)){
-        return playingScore(player1Points, player2Points);
-    }    
-    
-    if (isDeuce(player1Points, player2Points)) {
-        return "Deuce";
-    }
-    
-    let leadingPlayer = player1Points > player2Points ? player1 : player2;
-    
-    if (isAdvantage(player1Points, player2Points)){
-        return "Advantage " + leadingPlayer;
-    }
-
-    return "Win for " + leadingPlayer;
-}
-
 module.exports = {
     getScore1,
     getScore2,
-    getScore3,
-    getScore4
+    getScore3
 };
