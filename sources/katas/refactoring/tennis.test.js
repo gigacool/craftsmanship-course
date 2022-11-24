@@ -1,5 +1,5 @@
 var each = require("jest-each").default;
-const {getScore1, getScore2, getScore3 } = require('./tennis');
+const {getScore1, getScore2, getScore3, getScore4 } = require('./tennis');
 
 var allScores = [
   [0, 0, "Love-All"],
@@ -59,3 +59,9 @@ describe('getScore3', function() {
     expect(getScore3(p1, p2)).toEqual(expected);
   });
 });
+
+describe('getScore4', function() {
+    each(allScores).it("when the points are %s:%s is %s", function(p1, p2, expected) {
+      expect(getScore4(p1, p2)).toEqual(expected);
+    });
+  });
